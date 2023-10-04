@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/connection-proxy-header: "keep-alive"
+    ingress.kubernetes.io/ssl-redirect: "false"
+    ingress.kubernetes.io/connection-proxy-header: "keep-alive"
+  name: acmeair-auth-ingress
+spec:
+  rules:
+  - host:
+    http:
+      paths:
+      - pathType: Prefix
+        path: /auth
+        backend:
+          service:
+            name: acmeair-auth-service
+            port: 
+              number: 9080

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/connection-proxy-header: "keep-alive"
+    ingress.kubernetes.io/ssl-redirect: "false"
+    ingress.kubernetes.io/connection-proxy-header: "keep-alive"
+  name: acmeair-flight-ingress
+spec:
+  rules:
+  - host:
+    http:
+      paths:
+      - pathType: Prefix
+        path: /flight
+        backend:
+          service: 
+            name: acmeair-flight-service
+            port: 
+              number: 9080
