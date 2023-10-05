@@ -41,7 +41,7 @@ interval = 3
 data_storage = {metric['id']: [] for metric in metrics}
 
 # Use a timer to fetch data for exactly 10 seconds
-end_time = time.time() + 60
+end_time = time.time() + 300
 
 while time.time() < end_time:
     start = -10
