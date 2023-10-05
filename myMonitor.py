@@ -2,7 +2,10 @@ from sdcclient import IbmAuthHelper, SdMonitorClient
 import sys
 import time
 import matplotlib.pyplot as plt
+import threading
+import json
 
+folder_name = "./plot"
 URL = "https://ca-tor.monitoring.cloud.ibm.com"
 APIKEY = "ryGqL7Thrn0EvtVjKsAGAXcyPNtPNlFXFDwF4T_Pz-Tk"
 GUID = "b92c514a-ca21-4548-b3f0-4d6391bab407"
@@ -36,37 +39,60 @@ metrics = [
 ]
 
 interval = 3
+# ... [Your previous code up to the metrics list]
 
-# Store data
-data_storage = {metric['id']: [] for metric in metrics}
+# List of kube_workload_names
+workload_names = ['acmeair-flightservice','acmeair-mainservice','acmeair-bookingservice', 'acmeair-customerservice']
+
+data_storage = {workload: {metric['id']: [] for metric in metrics} for workload in workload_names}
 
 # Use a timer to fetch data for exactly 10 seconds
-end_time = time.time() + 300
+end_time = time.time() + 600
 
-while time.time() < end_time:
-    start = -10
-    end = 0
-    # sampling = 60
-    ok, res = sdclient.get_data(metrics, start, end,filter = "kube_cluster_name='ece750cluster' and kube_namespace_name='acmeair-g11' and kube_workload_name ='acmeair-bookingservice'")
-    if not ok:
-        print(f"Error fetching metrics: {res}")
-        sys.exit(1)
-    
-    for metric in metrics:
-        metric_id = metric['id']
-        data_storage[metric_id].append(res['data'][0]['d'][metrics.index(metric)])
-    
-    # Sleep for the interval duration
-    time.sleep(interval)
+def fetch_data_for_workload(kube_workload_name):
+    while time.time() < end_time:
+        start = -10
+        end = 0
+        ok, res = sdclient.get_data(metrics, start, end, filter=f"kube_cluster_name='ece750cluster' and kube_namespace_name='acmeair-g11' and kube_workload_name='{kube_workload_name}'")
+        if not ok:
+            print(f"Error fetching metrics for {kube_workload_name}: {res}")
+            sys.exit(1)
+        
+        for metric in metrics:
+            metric_id = metric['id']
+            data_storage[kube_workload_name][metric_id].append(res['data'][0]['d'][metrics.index(metric)])
+        
+        # Sleep for the interval duration
+        time.sleep(interval)
 
-# Plotting each metric in its own figure
-for metric_id, values in data_storage.items():
-    # print(f"Data for {metric_id}: {values}")  # Print the collected data
-    
-    plt.figure(figsize=(10, 5))  # Increase the figure size for better resolution
-    plt.plot(values, marker='o', linestyle='-')  # Use markers to visualize individual data points
-    plt.title(metric_id)
-    plt.xlabel('Time Intervals')
-    plt.ylabel('Metric Value')
-    plt.grid(True)  # Add a grid for better visualization
-    plt.show()
+# Start a thread for each kube_workload_name
+threads = []
+for kube_workload_name in workload_names:
+    thread = threading.Thread(target=fetch_data_for_workload, args=(kube_workload_name,))
+    thread.start()
+    threads.append(thread)
+
+# Wait for all threads to complete
+for thread in threads:
+    thread.join()
+
+# Plotting each metric in its own figure for each workload
+for kube_workload_name, metrics_data in data_storage.items():
+    for metric_id, values in metrics_data.items():
+        plt.figure(figsize=(10, 5))
+        plt.plot(values, marker='o', linestyle='-')
+        plt.title(f"{kube_workload_name} - {metric_id}")
+        plt.xlabel('Time Intervals')
+        plt.ylabel('Metric Value')
+        plt.grid(True)
+        
+        # Save the figure to a file with workload name as prefix
+        # filename = f"{kube_workload_name}_{metric_id}.png"
+        filename = f"{folder_name}/{kube_workload_name}_{metric_id}.png"
+        plt.savefig(filename)
+        
+        # Close the figure to free up memory
+        plt.close()
+
+with open('collected_data.json', 'w') as json_file:
+    json.dump(data_storage, json_file, indent=4)
