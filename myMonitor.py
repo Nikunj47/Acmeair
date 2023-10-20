@@ -14,35 +14,19 @@ ibm_headers = IbmAuthHelper.get_headers(URL, APIKEY, GUID)
 sdclient = SdMonitorClient(sdc_url=URL, custom_headers=ibm_headers)
 
 metrics = [
-    {"id": "jmx_jvm_class_loaded", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_class_unloaded", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_gc_global_count", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_gc_global_time", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_gc_scavenge_count", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_gc_scavenge_time", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_heap_committed", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_heap_init", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_heap_max", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_heap_used", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_heap_used_percent", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_nonHeap_committed", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_nonHeap_init", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_nonHeap_max", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_nonHeap_used", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_nonHeap_used_percent", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_thread_count", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "jmx_jvm_thread_daemon", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "sysdig_connection_net_request_time", "aggregations": {"time": "timeAvg", "group": "max"}},
-    {"id": "sysdig_connection_net_connection_total_count", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "sysdig_container_cpu_cores_used_percent", "aggregations": {"time": "timeAvg", "group": "avg"}},
-    {"id": "sysdig_container_memory_used_percent", "aggregations": {"time": "timeAvg", "group": "avg"}}
+        {"id": "sysdig_container_cpu_cores_used", "aggregations": {"time": "timeAvg", "group": "sum"}},
+        {"id": "sysdig_container_cpu_quota_used_percent", "aggregations": {"time": "timeAvg", "group": "sum"}},
+        {"id": "sysdig_container_memory_used_bytes", "aggregations": {"time": "timeAvg", "group": "sum"}},
+        {"id": "sysdig_container_memory_limit_used_percent", "aggregations": {"time": "timeAvg", "group": "sum"}},
+        {"id": "kube_pod_sysdig_restart_count", "aggregations": {"time": "timeAvg", "group": "sum"}},
+        {"id": "jmx_jvm_thread_count", "aggregations": {"time": "timeAvg", "group": "sum"}}
 ]
 
 interval = 3
 # ... [Your previous code up to the metrics list]
 
 # List of kube_workload_names
-workload_names = ['acmeair-flightservice','acmeair-mainservice','acmeair-bookingservice', 'acmeair-customerservice']
+workload_names = ['acmeair-flightservice', 'acmeair-mainservice', 'acmeair-bookingservice', 'acmeair-customerservice', 'acmeair-authservice']
 
 data_storage = {workload: {metric['id']: [] for metric in metrics} for workload in workload_names}
 
