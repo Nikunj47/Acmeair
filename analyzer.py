@@ -158,6 +158,9 @@ def analyze():
             print(f"{service}: U = {model.intercept_} + {model.coef_} * {name_list[i-1]}")
 
 def selfOptimize():
+
+    path = './../Acmeair/acmeair-mainservice-java/scripts/buildAndDeployToOpenshift.sh'
+
     while(True):
         interval = 30
         try:
@@ -177,26 +180,71 @@ def selfOptimize():
                 print(f'Service {service} restarted {sum(service_value["kube_pod_sysdig_restart_count"])} times!')
                 if mean(service_value['sysdig_container_memory_limit_used_percent']) > 80:
                     print(f"Service {service} -> Memory: {mean(service_value['sysdig_container_memory_limit_used_percent'])}% -> Increase memory")
+                    modify_memory_value(f'./{service}-java/chart/{service}-java/values.yaml', 'd')
                 elif mean(service_value['sysdig_container_memory_limit_used_percent']) < 20:
                     print(f"Service {service} -> Memory: {mean(service_value['sysdig_container_memory_limit_used_percent'])}% -> Decrease memory")
+                    modify_memory_value(f'./{service}-java/chart/{service}-java/values.yaml', 'd')
                 else:
                     print(f"Service {service} -> Memory: {mean(service_value['sysdig_container_memory_limit_used_percent'])}% -> Memory is good")
                 if mean(service_value['sysdig_container_cpu_quota_used_percent']) > 80:
                     print(f"Service {service} -> CPU: {mean(service_value['sysdig_container_cpu_quota_used_percent'])}% -> Increase CPU")
+                    modify_cpu_value(f'./{service}-java/chart/{service}-java/values.yaml', 'i')
                 elif mean(service_value['sysdig_container_cpu_quota_used_percent']) < 20:
                     print(f"Service {service} -> CPU: {mean(service_value['sysdig_container_cpu_quota_used_percent'])}% -> Decrease CPU")
+                    modify_cpu_value(f'./{service}-java/chart/{service}-java/values.yaml', 'd')
                 else:
                     print(f"Service {service} -> CPU: {mean(service_value['sysdig_container_cpu_quota_used_percent'])}% -> CPU is good")
             except Exception as e:
-                print(f'Error: {e}')
+                print(f'Error while monitoring metrics: {e}')
 
-
-
+        try:
+            subprocess.run('./../Acmeair/acmeair-mainservice-java/scripts/buildAndDeployToOpenshift.sh', shell=True)
+        except Exception as e:
+            print(f'Error while redeploy pods: {e}')
 
         # path = ''
         # result = subprocess.run([path + 'switch.sh', path + '/', path], capture_output=True, text=True)
         # result = subprocess.run([path + 'switch.sh', path + '/', path], capture_output=True, text=True)
 
+def modify_cpu_value(file_path, action):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    with open(file_path, 'w') as file:
+        for line in lines:
+            if 'cpu:' in line:
+                parts = line.split('cpu:')
+                try:
+                    number_part = parts[1].strip().rstrip('m')
+                    number = int(number_part)
+                    if action == 'i':
+                        number *= 2
+                    else:
+                        number /= 2
+                    line = f"      cpu: {number}m\n"
+                except ValueError:
+                    pass
+            file.write(line)
+
+def modify_memory_value(file_path, action):
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    with open(file_path, 'w') as file:
+        for line in lines:
+            if 'memory:' in line:
+                parts = line.split('memory:')
+                try:
+                    number_part = parts[1].strip().rstrip('m')
+                    number = int(number_part)
+                    if action == 'i':
+                        number *= 2
+                    else:
+                        number /= 2
+                    line = f"      memory: {number}m\n"
+                except ValueError:
+                    pass
+            file.write(line)
 
 # def UtilityF(service, heap_usage, heap_percent):
 #     workload_names = ['acmeair-flightservice', 'acmeair-mainservice', 'acmeair-bookingservice', 'acmeair-customerservice']
@@ -226,6 +274,6 @@ def selfOptimize():
 
 
 if __name__ == "__main__":
-    getData(300)
-    analyze()
-    #selfOptimize()
+    #getData(60)
+    #analyze()
+    selfOptimize()

@@ -1,0 +1,385 @@
+C:\Users\BELAN\AppData\Local\Programs\Python\Python39\python.exe "C:\Users\BELAN\Desktop\750\New folder\Acmeair\analyzer.py" 
+15:44:30--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 144 times!
+Service acmeair-flightservice -> Memory: 53.35966388888889% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.4277778888888889% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.878022% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.0967% -> Decrease CPU
+Service acmeair-bookingservice restarted 99 times!
+Service acmeair-bookingservice -> Memory: 74.05724444444444% -> Memory is good
+Service acmeair-bookingservice -> CPU: 0.30477777777777776% -> Decrease CPU
+Service acmeair-customerservice restarted 144 times!
+Service acmeair-customerservice -> Memory: 79.472352% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.6502222222222223% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 41.295149888888886% -> Memory is good
+Service acmeair-authservice -> CPU: 1.0382222222222222% -> Decrease CPU
+15:45:06--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.2982032% -> Memory is good
+Service acmeair-flightservice -> CPU: 40.7670002% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.878022% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2082% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 75.6759646% -> Memory is good
+Service acmeair-bookingservice -> CPU: 32.4182% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.4749762% -> Memory is good
+Service acmeair-customerservice -> CPU: 36.1641003% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.1258854% -> Memory is good
+Service acmeair-authservice -> CPU: 11.2666% -> Decrease CPU
+15:45:40--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 52.9564442% -> Memory is good
+Service acmeair-flightservice -> CPU: 50.6755004% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.878159200000002% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2706% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 79.057137% -> Memory is good
+Service acmeair-bookingservice -> CPU: 40.1103001% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.48540539999999% -> Memory is good
+Service acmeair-customerservice -> CPU: 46.9889005% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.117684% -> Memory is good
+Service acmeair-authservice -> CPU: 13.989900500000001% -> Decrease CPU
+15:46:16--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 52.6425179% -> Memory is good
+Service acmeair-flightservice -> CPU: 47.928200000000004% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2755999999999998% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 81.9912036% -> Increase memory
+Service acmeair-bookingservice -> CPU: 37.9035% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.3550422% -> Memory is good
+Service acmeair-customerservice -> CPU: 45.667% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.1227422% -> Memory is good
+Service acmeair-authservice -> CPU: 13.538700500000001% -> Decrease CPU
+15:46:51--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 52.3247839% -> Memory is good
+Service acmeair-flightservice -> CPU: 42.9214004% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.22% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.6278459% -> Increase memory
+Service acmeair-bookingservice -> CPU: 35.874400300000005% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.2388235% -> Memory is good
+Service acmeair-customerservice -> CPU: 40.9539003% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.0747077% -> Memory is good
+Service acmeair-authservice -> CPU: 12.2177003% -> Decrease CPU
+15:47:25--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 52.0322884% -> Memory is good
+Service acmeair-flightservice -> CPU: 51.2458002% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2406% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.6504064% -> Increase memory
+Service acmeair-bookingservice -> CPU: 40.7206002% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.2211612% -> Memory is good
+Service acmeair-customerservice -> CPU: 47.1274% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.0518958% -> Memory is good
+Service acmeair-authservice -> CPU: 14.2334% -> Decrease CPU
+15:48:00--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 51.8814245% -> Memory is good
+Service acmeair-flightservice -> CPU: 64.06790000000001% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2985002% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.6680837% -> Increase memory
+Service acmeair-bookingservice -> CPU: 54.1890001% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.1084982% -> Memory is good
+Service acmeair-customerservice -> CPU: 62.4462% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.0307928% -> Memory is good
+Service acmeair-authservice -> CPU: 18.368199999999998% -> Decrease CPU
+15:48:34--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 51.877350400000005% -> Memory is good
+Service acmeair-flightservice -> CPU: 71.3638% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2955004% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.8578191% -> Increase memory
+Service acmeair-bookingservice -> CPU: 61.9002% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.1113512% -> Memory is good
+Service acmeair-customerservice -> CPU: 68.4519% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.0097129% -> Memory is good
+Service acmeair-authservice -> CPU: 20.3210004% -> CPU is good
+15:49:08--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 51.876922900000004% -> Memory is good
+Service acmeair-flightservice -> CPU: 78.7361002% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.3339001000000001% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.9738242% -> Increase memory
+Service acmeair-bookingservice -> CPU: 65.6984004% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.118775% -> Memory is good
+Service acmeair-customerservice -> CPU: 73.8674% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.0441745% -> Memory is good
+Service acmeair-authservice -> CPU: 21.8358% -> CPU is good
+15:49:44--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 51.8774493% -> Memory is good
+Service acmeair-flightservice -> CPU: 76.9915005% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.3182222222222222% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.9398122% -> Increase memory
+Service acmeair-bookingservice -> CPU: 64.2132% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.1187978% -> Memory is good
+Service acmeair-customerservice -> CPU: 72.2043005% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 39.9962316% -> Memory is good
+Service acmeair-authservice -> CPU: 21.4119005% -> CPU is good
+15:50:19--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 51.876122099999996% -> Memory is good
+Service acmeair-flightservice -> CPU: 74.1335% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2532% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.9883658% -> Increase memory
+Service acmeair-bookingservice -> CPU: 62.292% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.1501853% -> Memory is good
+Service acmeair-customerservice -> CPU: 71.2538002% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 39.9983832% -> Memory is good
+Service acmeair-authservice -> CPU: 20.7816006% -> CPU is good
+15:50:53--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 51.9085319% -> Memory is good
+Service acmeair-flightservice -> CPU: 69.0496% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.389% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.98103400000001% -> Increase memory
+Service acmeair-bookingservice -> CPU: 57.2608004% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.12135339999999% -> Memory is good
+Service acmeair-customerservice -> CPU: 62.8354007% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 39.9888079% -> Memory is good
+Service acmeair-authservice -> CPU: 18.4975% -> Decrease CPU
+15:51:28--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 52.4185645% -> Memory is good
+Service acmeair-flightservice -> CPU: 81.3365% -> Increase CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2641% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.0313036% -> Increase memory
+Service acmeair-bookingservice -> CPU: 70.9006007% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.3368076% -> Memory is good
+Service acmeair-customerservice -> CPU: 76.3346001% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.1101842% -> Memory is good
+Service acmeair-authservice -> CPU: 22.9493002% -> CPU is good
+15:52:03--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.3439182% -> Memory is good
+Service acmeair-flightservice -> CPU: 88.51440000000001% -> Increase CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.304% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.1051944% -> Increase memory
+Service acmeair-bookingservice -> CPU: 77.6320004% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 80.1155246% -> Increase memory
+Service acmeair-customerservice -> CPU: 87.33660019999999% -> Increase CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.1598514% -> Memory is good
+Service acmeair-authservice -> CPU: 24.2326% -> CPU is good
+15:52:37--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.3874367% -> Memory is good
+Service acmeair-flightservice -> CPU: 95.2621% -> Increase CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.3296000000000001% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.1111987% -> Increase memory
+Service acmeair-bookingservice -> CPU: 81.3109% -> Increase CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.4530568% -> Memory is good
+Service acmeair-customerservice -> CPU: 89.9507% -> Increase CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.1740116% -> Memory is good
+Service acmeair-authservice -> CPU: 26.0398% -> CPU is good
+15:53:11--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.3969503% -> Memory is good
+Service acmeair-flightservice -> CPU: 90.66380050000001% -> Increase CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2991% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.1402059% -> Increase memory
+Service acmeair-bookingservice -> CPU: 78.0102% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.4565204% -> Memory is good
+Service acmeair-customerservice -> CPU: 86.1808005% -> Increase CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.2501532% -> Memory is good
+Service acmeair-authservice -> CPU: 24.576900000000002% -> CPU is good
+15:53:46--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.3969732% -> Memory is good
+Service acmeair-flightservice -> CPU: 48.525600000000004% -> CPU is good
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.214% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.1001514% -> Increase memory
+Service acmeair-bookingservice -> CPU: 44.4369% -> CPU is good
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.4555746% -> Memory is good
+Service acmeair-customerservice -> CPU: 48.6842003% -> CPU is good
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.305619% -> Memory is good
+Service acmeair-authservice -> CPU: 13.9853% -> Decrease CPU
+15:54:21--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.398133% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.4905003% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.1326% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.0598456% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.317% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.7525% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.367127100000005% -> Memory is good
+Service acmeair-authservice -> CPU: 0.637% -> Decrease CPU
+15:54:56--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.3980108% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.46640000000000004% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.1218% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.058381% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.3043002% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.7322% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.3676765% -> Memory is good
+Service acmeair-authservice -> CPU: 0.6223% -> Decrease CPU
+15:55:31--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.39737% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.45130000000000003% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.0738001000000001% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.058381% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.3494001% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.6762002% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.36789% -> Memory is good
+Service acmeair-authservice -> CPU: 0.6022% -> Decrease CPU
+15:56:06--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.39737% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.4475002% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.1748% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.058381% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.3214% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.7016003% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.36789% -> Memory is good
+Service acmeair-authservice -> CPU: 0.6007% -> Decrease CPU
+15:56:41--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.39737% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.44330040000000004% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.1293% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.058381% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.31270000000000003% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.6827% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.36789% -> Memory is good
+Service acmeair-authservice -> CPU: 0.5985% -> Decrease CPU
+15:57:16--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.39737% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.449% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.1064003% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 84.058381% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.3064004% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.6704% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.36789% -> Memory is good
+Service acmeair-authservice -> CPU: 0.6014005% -> Decrease CPU
+15:57:50--------------------------------------------------------------------------------------
+Service acmeair-flightservice restarted 160 times!
+Service acmeair-flightservice -> Memory: 53.39737% -> Memory is good
+Service acmeair-flightservice -> CPU: 0.4481% -> Decrease CPU
+Service acmeair-mainservice restarted 0 times!
+Service acmeair-mainservice -> Memory: 28.880311% -> Memory is good
+Service acmeair-mainservice -> CPU: 1.2009006% -> Decrease CPU
+Service acmeair-bookingservice restarted 110 times!
+Service acmeair-bookingservice -> Memory: 83.527192% -> Increase memory
+Service acmeair-bookingservice -> CPU: 0.6601005% -> Decrease CPU
+Service acmeair-customerservice restarted 160 times!
+Service acmeair-customerservice -> Memory: 79.45633% -> Memory is good
+Service acmeair-customerservice -> CPU: 0.708% -> Decrease CPU
+Service acmeair-authservice restarted 0 times!
+Service acmeair-authservice -> Memory: 40.3531958% -> Memory is good
+Service acmeair-authservice -> CPU: 0.7105% -> Decrease CPU
