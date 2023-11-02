@@ -19,6 +19,7 @@ metrics = [
     {"id": "jmx_jvm_gc_scavenge_count", "aggregations": {"time": "timeAvg", "group": "avg"}},
     {"id": "jmx_jvm_gc_scavenge_time", "aggregations": {"time": "timeAvg", "group": "avg"}},
     {"id": "jmx_jvm_heap_committed", "aggregations": {"time": "timeAvg", "group": "avg"}},
+    {"id": "kube_deployment_status_replicas_available", "aggregations": {"time": "timeAvg", "group": "avg"}},
     {"id": "jmx_jvm_heap_init", "aggregations": {"time": "timeAvg", "group": "avg"}},
     {"id": "jmx_jvm_heap_max", "aggregations": {"time": "timeAvg", "group": "avg"}},
     {"id": "jmx_jvm_heap_used", "aggregations": {"time": "timeAvg", "group": "avg"}},
@@ -40,7 +41,7 @@ end = 0
 
 
 sampling = 60
-ok, res = sdclient.get_data(metrics,start,end)
+ok, res = sdclient.get_data(metrics,start,end,filter=f"kube_cluster_name='ece750cluster' and kube_namespace_name='acmeair-g11'and kube_workload_name='acmeair-mainservice'")
 if not ok:
     print(f"Error fetching metrics: {res}")
     sys.exit(1)
