@@ -159,7 +159,7 @@ def analyze():
 
 def selfOptimize():
 
-    path = './../Acmeair-main/acmeair-mainservice-java/scripts/buildAndDeployToOpenshift.sh'
+    path = './../Acmeair/acmeair-mainservice-java/scripts/buildAndDeployToOpenshift.sh'
 
     while(True):
         interval = 30
@@ -198,7 +198,7 @@ def selfOptimize():
                 print(f'Error while monitoring metrics: {e}')
 
         try:
-            subprocess.run('./../Acmeair-main/acmeair-mainservice-java/scripts/buildAndDeployToOpenshift.sh', shell=True)
+            subprocess.run('./../Acmeair/acmeair-mainservice-java/scripts/buildAndDeployToOpenshift.sh', shell=True)
         except Exception as e:
             print(f'Error while redeploy pods: {e}')
 
